@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/manjatoharinaivo-completez-votre-reservation', function () {
+    return view('manjatoharinaivo-completez-votre-reservation');
+});
+
+Route::get('/manjatoharinaivo-paiement', function () {
+    return view('manjatoharinaivo-paiement');
 });
