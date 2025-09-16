@@ -9,8 +9,19 @@
 <body class="bg-gray-100 min-h-screen">
 
     <!-- Header commun -->
-    <header class="bg-blue-600 text-white p-4">
-        <h1 class="text-xl font-bold">AAAEP Centre national des tests psychotechniques</h1>
+    <header class="bg-white">
+        <div class="pt-[24px] pb-[19px]">
+            <div class="container mx-auto">
+                <a href="/manjatoharinaivo-completez-votre-reservation">
+                    <img src="{{ asset('logo.png') }}" alt="Logo AAAEP" />
+                </a>
+            </div>
+        </div>
+        <div class="pt-[42px] pb-[39px] shadow-[0_3px_14px_rgba(0,0,0,0.16)]">
+            <div class="container mx-auto">
+                <h1>Test psychotechnique pour permis de conduire à Montgeron</h1>
+            </div>
+        </div>
     </header>
 
     <!-- Contenu de chaque page -->

@@ -10,7 +10,92 @@
     html {
         font-family: var(--font-lato);
     }
+    a, button {
+        @apply cursor-pointer;
+    }
+
+    h1 {
+        @apply text-[#36578A] text-[33px] font-bold leading-[40px];
+    }
+
+    h2 {
+        @apply text-[#383838] text-[31px] font-bold leading-[38px];
+    }
+
+    ul li {
+        @apply text-[20px] leading-[24px] text-[#2C2C2C];
+    }
 }
+
+@layer components {
+    .card {
+      @apply bg-white rounded-[37px] overflow-hidden shadow-[0_3px_6px_rgba(0,0,0,0.16)];
+    }
+    .card ul li .fas, .card ul li .far, .card ul li .fab {
+      @apply mr-[8px];
+    }
+  
+    /* Card header */
+    .card-header {
+      @apply text-center pt-[15px] pb-[12px] shadow-[0_3px_6px_rgba(0,0,0,0.16)];
+    }
+  
+    /* Card button */
+    .card-btn {
+      @apply font-bold text-[26px] leading-[32px] pt-[15px] pb-[14px] px-[26px] mx-auto rounded-[12px] shadow-[0_3px_6px_rgba(0,0,0,0.16)] flex items-center justify-center;
+    }
+    .card .selection-circle {
+      @apply w-[19px] h-[19px] rounded-[50%] bg-white mr-[16px] flex justify-center items-center;
+    }
+    .card .selection-circle .check-icon {
+      font-size: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .card.card-selected .selection-circle .check-icon {
+      opacity: 1;
+    }
+  
+    /* Card color variants */
+    .card-gray.card-selected {
+      @apply border-2 border-solid border-[#353535];
+    }
+    .card-gray .card-header {
+      @apply bg-[#F2F3F5] text-[#2C2C2C];
+    }
+    .card-gray .fas, .card-gray .far, .card-gray .fab {
+      @apply text-[#353535];
+    }
+    .card-gray .card-btn {
+      @apply text-[#353535] bg-[#F2F3F5];
+    }
+    
+    .card-green.card-selected {
+      @apply border-2 border-solid border-[#0DBC0D];
+    }
+    .card-green .card-header {
+      @apply bg-[#0DBC0D] text-white;
+    }
+    .card-green .fas, .card-green .far, .card-green .fab {
+      @apply text-[#0DBC0D];
+    }
+    .card-green .card-btn {
+      @apply text-white bg-[#0DBC0D];
+    }
+    
+    .card-blue.card-selected {
+      @apply border-2 border-solid border-[#36578A];
+    }
+    .card-blue .card-header {
+      @apply bg-[#36578A] text-white;
+    }
+    .card-blue .fas, .card-blue .far, .card-blue .fab {
+      @apply text-[#36578A];
+    }
+    .card-blue .card-btn {
+      @apply text-white bg-[#36578A];
+    }
+  }
 
 @source '../**/*.blade.php';
 @source '../**/*.js';
