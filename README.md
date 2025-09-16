@@ -7,7 +7,7 @@ Pour lancer le site,
 - exécuter `php artisan serve` pour le serveur de développement PHP
 - exécuter `npm install`, car j'ai mis fontawesome pour les icônes.
 - exécuter `npm run dev` pour le front, le site est disponible sur http://127.0.0.1:8000
-    - Page réservation : 127.0.0.1:8000/manjatoharinaivo-completez-votre-reservation
+    - Page réservation : http://127.0.0.1:8000/manjatoharinaivo-completez-votre-reservation
     - Page Paiement : http://127.0.0.1:8000/manjatoharinaivo-paiement
 
 ## Notes de design
